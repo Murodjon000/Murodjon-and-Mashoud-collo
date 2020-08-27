@@ -1,12 +1,126 @@
-#main{
-    text-align:center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Do+Hyeon&family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Do+Hyeon&family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+body{
+  background: rgba(255, 219, 89,0.4);
+  
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  
+
+}
+#title{
+  text-align: center;
+  font-size: 1.5em;
+  animation: color;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+
+  font-weight: bold;
+  
+}
+
   #image{
-      display:block;
-      text-align:center;
-      height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      /* height:auto;
       max-width:100%;
       margin-left:auto;
-      margin-right:auto;
+      margin-right:auto; */
      
     }
+    img{
+      box-shadow: rgba(181, 148, 29,0.7);
+      border-radius: 10px solid rgba(181, 148, 29,0.7);
+    }
+   
+  #img-caption{
+    text-align: center;
+    font-size: 1.1em;
+    
+  }
+ .tribute-page{
+   text-align: center;
+ }
+ul li{
+  line-height: 20px;
+  display: flex;
+ 
+  
+}
+blockquote{
+  text-align: center;
+  font-weight: bold;
+
+}
+.quote{
+  animation: color ;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+blockquote >p{
+  text-align: start;
+  margin-left: 30px;
+  
+}
+.footer{
+  text-align: center;
+ 
+}
+a{
+  transition: all,2s;
+  text-decoration: none;
+  animation: color;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
+a:hover{
+  font-size: 1.3em;
+  cursor: pointer;
+  font-weight: bold;
+}
+@keyframes color{
+  0%{
+    color: rgb(93, 232, 102);
+  }
+  25%{
+    color: rgb(242, 41, 81);
+  }
+  50%{
+    color: rgb(255, 94, 41);
+  }
+  75%{
+    color: rgb(255, 43, 117);
+  }
+  100%{
+    color: rgb(224, 25, 255);
+  }
+}
+@media (min-width:768px){
+  #image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+      /* height:auto;
+      max-width:100%;
+      margin-left:auto;
+      margin-right:auto; */
+     
+    }
+}
